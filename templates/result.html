@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>중고차 가격</title>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+    <style>
+    * {
+        font-family: 'Do Hyeon', sans-serif;
+    }
+    
+    body {
+        height: 100vh;
+        background-repeat : no-repeat;
+        background-size : cover;
+    }
+
+    .pd{
+        padding-top: 20px;
+        width: fit-content;
+        margin: auto;
+        font-size: 35px;
+    }
+
+    .pd-price {
+        width: fit-content;
+        margin: auto;
+        font-size: 60px;
+    }
+    
+    .mybtn {
+        width: 100px;
+        margin: auto;
+        display: block;
+        }
+    </style>
+
+</head>
+
+<body background="../static/src/{{ brand }}.jpg">
+    <div>
+        <div class="pd">
+            선택하신 옵션으론
+        </div>
+        
+        <div class="pd-price">
+            약 {{ price }} $
+        </div>
+
+        <div class="pd">
+            입니다.
+        </div>  
+        
+        <button class="mybtn" type="button" onclick="location.href='/'"> back </button>
+
+    </div>
+
+</body>
+
+</html>

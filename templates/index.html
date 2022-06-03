@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+
+    <title>중고차 가격</title>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+      * {
+        font-family: 'Do Hyeon', sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        background-repeat : no-repeat;
+        background-size : cover;
+      }
+
+      .input {
+        width: fit-content;
+        margin: auto;
+        padding-top :20px ;
+      }
+
+      .input-group-prepend {
+        width: 300px;
+        margin: auto;
+        padding-top :10px ;
+      }
+
+      .mybtn {
+        width: 100px;
+        margin: auto;
+        display: block;
+        }
+    </style>
+</head>
+
+
+<body background="../static/src/base.jpg">
+  <div>
+  <form action="result.html" method="GET">
+  <div class="input">
+
+    <h1> 중고차의 가격을 예측해봅시다 ! </h1>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">brand</label>
+          <select id="order-qua" class="custom-select" name="brand">
+              <option selected></option>
+              <option value="bmw">bmw</option>
+              <option value="benz">benz</option>
+              <option value="audi">audi</option>
+              <option value="hyundi">hyundi</option>
+              <option value="ford">ford</option>
+              <option value="vw">vw</option>
+              <option value="toyota">toyota</option>
+          </select>
+          </div>
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">year</span>
+              <input id="option-year" name="year" type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">mileage</span>
+          <input id="option-mile" name="mileage" type="text" value="Enter in 1,000 units" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">mpg</label>
+          <select id="order-qua" class="custom-select" name="mpg">
+              <option selected></option>
+              <option value="47.1">low</option>
+              <option value="55.4">middle</option>
+              <option value="62.8">top</option>
+          </select>
+          </div>
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">enginesize</label>
+          <select id="order-qua" class="custom-select" name="enginesize">
+              <option selected></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+          </select>
+          </div>
+        </div>
+
+        <button class="mybtn" type="submit">NEXT</button>
+
+    </div>
+  </form>
+
+  </div>
+       
+</body>
+</html>
